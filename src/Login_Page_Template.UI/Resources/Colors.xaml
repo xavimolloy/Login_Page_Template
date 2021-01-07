@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Login_Page_Template.UI.Resources.Colors"
+                    xmlns:local="clr-namespace:Login_Page_Template.UI.Resources">
+
+    <Color x:Key="PrimaryColor">#0394fc</Color>
+    <Color x:Key="PrimaryDarkColor">#20445e</Color>
+    <Color x:Key="PrimaryLightColor">#c4e0f5</Color>
+
+    <Color x:Key="AccentColor">#24b780</Color>
+    <Color x:Key="AccentDarkColor">#008653</Color>
+    <Color x:Key="AccentLightColor">#64eab0</Color>
+
+    <Color x:Key="PrimaryTextColor">#000000</Color>
+    <Color x:Key="SecondaryTextColor">#ffffff</Color>
+
+</ResourceDictionary>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:LoginViewModel"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Page_Template.UI.Pages.LoginPage"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+             xmlns:local="clr-namespace:Login_Page_Template.UI.Pages"
+             xmlns:viewModels="clr-namespace:Login_Page_Template.Core.ViewModels;assembly=Login_Page_Template.Core"
+        
+             Title="Mock App Name">
+    <Grid BackgroundColor="AliceBlue" Margin="10,10,10, 30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Label Text="Logo here" FontSize="40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Button Text="Acceso" Grid.Row="1"
+                HorizontalOptions="Fill" 
+                VerticalOptions="CenterAndExpand" 
+                BackgroundColor="#0394fc" 
+                TextColor="White" 
+                AutomationId="acceso"
+                Command="{Binding GoToLoginPage}"/>
+        <Button Text="Registro"
+                Grid.Row="2"
+                HorizontalOptions="Fill" 
+                VerticalOptions="CenterAndExpand" 
+                BackgroundColor="#0394fc" 
+                TextColor="White" 
+                AutomationId="registro"
+                Command="{Binding GoToRegisterPage}"/>
+
+    </Grid>
+
+</views:MvxContentPage>
